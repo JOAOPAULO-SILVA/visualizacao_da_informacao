@@ -30,24 +30,39 @@ Each JSON file follows this structure.
         "media_events": [ ... ],
         "agents_unavailable": [ ... ]
       },
-      "agent_outputs": [
+      "communications": [
         {
-          "agent_id": "legal_agent",
+          "message_id": ,
+          "agent_id": ,
+          "agent_role": ,
+          "agent_label": ,
           "internal_state": {
-            "reacting": "...",
-            "rationalizing": "...",
-            "deliberating": "..."
+            "reacting": null,
+            "rationalizing": null,
+            "deliberating": 
           },
-          "communications": [
-            {
-              "message_id": "...",
-              "channel": "comms_huddle",
-              "message_text": "...",
-            }
+          "channel": ,
+          "recipients": [
+            "ALL"
           ],
-          "declared_action": "MONITORING"
-        }
-      ]
+          "message_type": ,
+          "responding_to": null,
+          "content": ,
+          "timestamp": "2046-05-17T09:00:00"
+        },
+      ],
+      "participants": [
+        {
+          "agent_id": "pr_agent",
+          "agent_role": "pr",
+          "agent_label": "PR-Agent",
+          "declared_action": null,
+          "agent_round_metadata": {
+            "sentiment_at_turn": null,
+            "action_classification": null
+          }
+        },
+      ],
     }
   ]
 }
